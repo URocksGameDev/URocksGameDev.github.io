@@ -3,14 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Website</title>
+    <title>ProfX Tools - Unity Game Developer</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; margin: 40px; text-align: center; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #121212;
+            color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+        header h1 {
+            font-size: 2.5em;
+            color: #ffffff;
+            margin-bottom: 0;
+        }
+        header p {
+            font-size: 1.2em;
+            color: #bbbbbb;
+            margin-top: 5px;
+        }
+        .portfolio-section h2 {
+            margin-top: 40px;
+            border-top: 1px solid #333;
+            padding-top: 30px;
+            color: #ffffff;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        .contact-section {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #333;
+        }
+        .contact-section a {
+            color: #1e90ff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .contact-section a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-    <h1>Welcome!</h1>
-    <p>This is the personal website for URocks!</p>
-    <p>Work in progress!</p>
+
+    <div class="container">
+        <header>
+            <h1>ProfX Tools</h1>
+            <p>Passionate game developer specializing in tools and assets for the Unity Engine.</p>
+        </header>
+
+        <section class="portfolio-section">
+            <h2>Portfolio Showcase</h2>
+            <p>Here is a demonstration of one of my Unity assets in action.</p>
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/OxwHZOASCW0" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <h2>Get in Touch</h2>
+            <p>I'm open to new projects, creative ideas, or opportunities.</p>
+            <p>
+                <a href="mailto:profxtools@gmail.com">profxtools@gmail.com</a>
+            </p>
+        </section>
+    </div>
+
 </body>
 </html>
